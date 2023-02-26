@@ -86,12 +86,8 @@
         display: none;
     }
     
-    .slideInMenu{left: 100%;
+    .slideInMenu{
+        left: 100%;
         display: none;
-    }
-
-    .slideImage{left: 0;
-        display: block;
-        transform: .03s ease;
     }
 }
