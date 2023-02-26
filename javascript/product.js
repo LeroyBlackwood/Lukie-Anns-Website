@@ -116,7 +116,7 @@ const updateData = (payment) => {
 
     if(borrowAmountText >=9999 && borrowAmountText < 5000001){
         if(interestRateText >= 8 && interestRateText < 49){
-                if(period >= 11 && period < 601){
+                if(period >= 3 && period < 601){
 
     let result1 = Math.round(payment*100)/100;
     monthlyAmountPayable.textContent = "$ " + result1;
