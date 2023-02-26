@@ -1,0 +1,97 @@
+@media (max-width: 900px){
+    .contentOfHeader{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        margin-left: 10px;
+        padding-left:50px;
+        width: 100%;
+    }
+
+    .nav_menu{position: absolute;
+        top: 80px;
+        display: block;
+        flex-direction: column;
+        margin-right: 0;
+        text-align: center;
+        background-color: rgba(86, 90, 98, 0.789);
+        width: 100%;
+        border-radius: 2em;
+    }
+
+    .nav_link a{display: flex;
+        width: 100%;
+        border-radius: 3em;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .nav_link{
+       padding: 20px 10px;
+        display: block;
+    }
+    .nav_link li{
+        padding: 5px 10px;
+         display: block;
+     }
+     .nav_menu li:hover, .nav_link a:hover{
+        background-color: beige;
+        border-radius: 3em;
+     }
+     .imageAndText{
+        flex-direction: column-reverse;
+        align-items: center; 
+    }
+    .images{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+  
+    }
+    .slideImage{
+        width: 370px;
+        height: 180px;
+
+    }.text{
+        font-size: larger;
+        text-align: left;
+        align-content: center;
+
+    }
+    .text h1{
+        text-align: center;
+        margin-left: 0;
+        border-top: 1px solid;
+        padding-top: 20px;
+        margin-top: 0;
+    }
+    .nav_bar{
+        display: flex;
+        align-items: end;
+        margin-right: 50px;
+    }
+
+    .hamburgerMenu, .xMenu{
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .x{
+        display: none;
+    }
+    
+    .slideInMenu{left: 100%;
+        display: none;
+    }
+
+    .slideImage{left: 0;
+        display: block;
+        transform: .03s ease;
+    }
+}

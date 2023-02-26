@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/product.css">
+    <title>Lukie-Ann's Loans</title>
+    <style>
+        span{
+    background-color: rgb(240, 240, 240);padding: 0 5px;
+    text-align: center; display: flex; justify-content: space-between;
+    align-items: center; width: fit-content; font-size: larger;
+    border: 1px solid; gap: 5px;}
+    </style>
+</head>
+<body>
+    <div class="bodyOfDocument">
+        <header class="headOfDocument">
+            <div class="contentOfHeader">
+            <div class="logo">
+                <a href="index.html"><img class="image1_Logo" src="images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="nav_menu">
+                <ul>
+                    <li class="nav_link">
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="product.html">PRODUCT</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="aboutUs.html">ABOUT US</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </header>
+
+        <div class="ContainerForCalculator">
+            
+            <div class="loanSelector">
+                <div class="loanSelectorHeader">
+                <h2>
+                    Loan Selector
+                </h2>
+                </div>
+                <div class="items">
+                   <div class="selectLoan" id="vehicleLoan">
+                        <p>
+                            Vehicle Loan
+                        </p> 
+                    </div>
+                    <div class="selectLoan"  id="payDayLoan">
+                        <p>
+                            Pay Day Loan
+                        </p> 
+                    </div>
+                    <div class="selectLoan" id="tuitionLoan">
+                        <p>
+                            Tuition
+                        </p>
+                    </div>
+                    <div class="selectLoan" id="schoolSupplyLoan">
+                        <p>
+                            Back to School Supplies
+                        </p>
+                    </div>
+                    <div class="selectLoan" id="other">
+                        <p>
+                            Other
+                        </p> 
+                    </div>
+                </div>
+            </div>
+       
+
+            
+        <div class="loanSelector">
+            <form action="">
+            <div class="loanSelectorHeader">
+                <h2>
+                    Loan Selector
+                </h2>
+            </div>
+        
+            <div class="items">
+                <div>
+                <div>Type of Loan:
+            <div class="loanType" id="loanType"></div>
+        </div>
+                <div>
+                    <label for="borrowAmount">
+                        Borrow Amount:
+                    </label>
+                    <br>
+                    <span >$
+                        <input type="text" name="borrowAmount" id="borrowAmount"
+                        value="" style="width: 175px; font-size: 18px; padding: 1px 0;"
+                        placeholder="00"
+                        class="borrowAmount" required>
+                        .00
+                    </span>
+                </div>
+
+            <br>
+            <div>
+                <label for="interestRate">
+                    Interest Rate:
+                </label>
+            <br>
+                <span style="padding-left: 0;">
+                    <input type="text" name="interestRate" id="interestRate" 
+                    value="" style="width: 100px; background-color:white; font-size: 18px; padding: 1px 0;"
+                     placeholder="0.0"
+                    class="interestRate" required>
+                    %
+                </span>
+            </div>
+
+        <br>
+
+            <div>
+                <label for="period">
+                            Period:
+                        </label>
+                    <br>
+                    <span style="padding-left: 0;"><input type="text" name="period"
+                        id="period" value=""  style="width: 58px; font-size: 18px; padding: 1px 0;" placeholder="00"
+                        class="period" required>
+                        Mths.
+                    </span>
+                </div>
+                <br>
+            <div>
+                <div class="button" style="width: 300px;  cursor: pointer; padding: 8px 0;
+                font-size: larger;border-radius: 5px; font-weight: bolder;
+                background-color: white; text-align: center;
+                box-shadow: 5px 5px 11px -1px grey;
+                ">Calculate</div>
+            </div>
+        </div>
+
+            </div>
+
+            </form>
+           
+            <div class="resultBox">
+                <div class="mPayment">
+                    <h4>
+                        Monthly Payment:
+                    </h4>
+                <p id="monthlyPayment"  class="monthlyPayment">$ 0.00</p>
+            </div>
+           
+          <div class="tPayment">
+            <h4>
+                 Total Payment:
+            </h4>
+                <p id="totalPayment" class="totalPayment">$ 0.00</p>
+            </div>
+        </div>
+            </div></div>
+            <div class="loaInfo">
+                <h2>About Loan</h2>
+                <br>
+                <br>
+                <h3>Vehicle</h3>
+                <br>
+            <P>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quos ullam quidem eius saepe.
+                Placeat sint molestiae dignissimos qui eveniet, tempore itaque non,
+                cumque tempora, repellat soluta.
+                Fugit repellendus fuga voluptates?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quos ullam quidem eius saepe.
+                Placeat sint molestiae dignissimos qui eveniet, tempore itaque non,
+                cumque tempora, repellat soluta.
+                Fugit repellendus fuga voluptates?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quos ullam quidem eius saepe.
+                Placeat sint molestiae dignissimos qui eveniet, tempore itaque non,
+                cumque tempora, repellat soluta.
+                Fugit repellendus fuga voluptates?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quos ullam quidem eius saepe.
+                Placeat sint molestiae dignissimos qui eveniet, tempore itaque non,
+                cumque tempora, repellat soluta.
+                Fugit repellendus fuga voluptates?
+            </P></div>
+   </div>
+   <div>
+    <footer>
+        <P class="footer">
+            @Leroy Blackwood February, 2023
+        </P>
+    </footer>
+</div>
+    <script src="javascript/product.js"></script>
+
+
+</body>
+</html>

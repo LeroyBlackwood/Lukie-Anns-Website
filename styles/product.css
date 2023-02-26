@@ -1,0 +1,137 @@
+/*Input box styling*/
+.loanType{
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    height: 25px;
+    width: 240px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding-left: 5px;
+}
+
+.typeOfLoan{
+    border: 1px solid black;
+font-size: 12px;
+color: red;
+}
+
+
+
+#borrowAmount{
+    border-right: 1px solid;
+    border-left: 1px solid;
+   
+}
+#interestRate{
+    border-right: 1px solid;
+}
+#period{
+    border-right: 1px solid;
+}
+
+
+
+/*Calculator box styling*/
+.ContainerForCalculator{
+    display:flex;
+    justify-content: space-between;
+    padding-right: 80px;
+}
+
+.loanCalcul{
+    left: 300px;
+    width: 400px;
+    margin:30px;
+    margin-bottom: 100px;
+    background-color: rgb(154, 150, 146);
+    box-shadow: 15px 12px 12px -5px rgba(0, 0, 0, 0.205);
+    
+}
+.calculator{
+    text-align: center;
+    border-bottom: 1px solid;
+    padding: 20px 0;
+    background-color: blueviolet;
+}
+.inputSection{
+    border-bottom: 1px solid black;
+}
+.inputBox{display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    margin: 0 100px;
+}
+
+  /*Result Section Styling*/
+.resultBox{
+    border-top: 1px solid gray;
+    background-color: rgb(243, 243, 242);
+    padding: 30px 0 30px 50px;
+    text-align: left;
+    color: rgb(80, 78, 78);
+}
+.totalPayment, .monthlyPayment{
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.tPayment, .mPayment{
+margin-top: 30px;
+border-bottom: 1px solid;
+width: 170px;
+color: black;
+}
+.mPayment{
+    margin-top: 0;
+}
+
+.loanSelector{
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 15px 12px 12px -5px rgba(0, 0, 0, 0.205);
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.items{display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px;
+    width: 400px;
+    background-color: aquamarine;
+}
+.selectLoan{
+    font-size: x-large;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 1.5px 0;
+    text-align: center;
+    width: 325px;
+    background-color: azure;
+}
+.selectLoan:hover{
+   padding-left: 10px; 
+   box-shadow: 15px 12px 12px -5px rgba(0, 0, 0, 0.205);
+    cursor: pointer;
+
+}
+
+.loanSelectorHeader h2{
+    background-color: blueviolet;
+    padding: 20px 50px;
+    text-align: center;
+}
+.loanSelectorHeader h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+}
+
+.loaInfo{
+    padding: 50px;
+    margin: 20px;
+    border-top: 2px solid ;
+}

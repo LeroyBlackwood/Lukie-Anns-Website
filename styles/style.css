@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hamburger{
+    display: none;
+}
+
+.x{
+    display: none;
+}
+
+.bodyOfDocument{
+    position: relative;
+    margin: 10px;
+    width: auto;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.headOfDocument{
+    position: sticky;
+    top:0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+.contentOfHeader{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(210, 207, 212);
+    border-radius: 3em;
+}
+.logo{
+    margin-left: 10px;
+    padding-left: 50px;
+}
+.image1_Logo{
+    width: 150px;
+}
+.nav_menu{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+.nav_link{
+    list-style: none;
+   padding: 8px 10px;
+    display: inline-block;
+    font-size: larger;
+    font-weight: bolder;
+}
+.nav_link a{
+    text-decoration: none;
+    color: black;
+}
+.nav_link a:hover{
+    color: rgb(23, 96, 191);
+}
+.nav_menu li:hover{
+   background-color: beige;
+   border-radius: 3em;
+}
+
+.imageAndText{
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    margin-bottom: 0;  
+}
+.images{
+    background-color: rgb(106, 51, 133);
+    padding: 10px;
+    margin: 0 20px;
+    margin-bottom: 25px;
+    width: 70%;
+    justify-content: flex-end;
+    border-radius: 10px;
+    border: 2px solid rgb(122, 113, 113);
+    box-shadow: 15px 15px 12px -5px rgba(74, 70, 70, 0.344);
+
+
+
+}
+.slideImage{
+    width: 600px;
+    height: 390px;
+    border-radius: 2em;
+}
+
+.text{
+    font-size: larger;
+    text-align: center;
+    margin-left: 0px;
+    padding: 0 30px;
+    align-content: center;
+    margin-top: 20px;
+}
+.text h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 0 40px;
+font-weight: bold;
+}
+footer{
+    position: sticky;
+    bottom: 0px;
+}
+
+.footer{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-style: italic;
+    background-color: rgb(109, 86, 131);
+}
+.typesOfLoans{
+    position: sticky;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid;
+    justify-content: center;
+    background-color: rgb(171, 162, 162);
+}
+.typesOfLoans .loanType{
+    list-style: none;
+    display: inline-flex;
+    padding: 10px 30px;
+}
+.typesOfLoans .loanType{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+
+
+
+

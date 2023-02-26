@@ -1,0 +1,8 @@
+.body{margin: 100px 200px;
+    position: relative;
+text-align: left;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: x-large;
+isolation: isolate;
+z-index: -1;}
+
