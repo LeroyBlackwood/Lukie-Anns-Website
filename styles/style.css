@@ -63,8 +63,9 @@
     color: rgb(23, 96, 191);
 }
 .nav_menu li:hover{
-   background-color: beige;
+   background-color:beige;
    border-radius: 3em;
+   margin: 0 10px;
 }
 
 .imageAndText{
@@ -112,10 +113,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 padding: 0 40px;
 font-weight: bold;
-}
-footer{
-    position: sticky;
-    bottom: 0px;
 }
 
 .footer{
