@@ -9,15 +9,18 @@
     }
 
 
-    .nav_menu{position: absolute;
-        top: 80px;
+    .nav_menu{position: fixed;
+        top: 90px;
         flex-direction: column;
         text-align: center;
         background-color: rgba(157, 182, 232, 0.963);
-        width: 100%;
+        width: 97%;
         border-radius: 1em;
         left: 120%;
-        transition: 0.3s ease-in;
+        margin-left: 10px;
+        margin-right: 10px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
     .nav_link{
         padding: 20px 10px;
@@ -85,7 +88,11 @@
     .x{
         display: none;
     }
+    .slideOutMenu{
+        display: none;
+    }
 .slideInMenu{
+    display: block;
         left: 0;
         transition: 0.3s ease-in;
     }

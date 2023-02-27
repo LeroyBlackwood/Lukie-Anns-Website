@@ -7,7 +7,7 @@ console.log(navMenu);
 navHam.addEventListener("click", () =>{
     navHam.classList.toggle("x");
     navX.classList.toggle("x");
-    navMenu.classList.toggle("slideInMenu");
+    navMenu.classList.add("slideInMenu");
 
     console.log("clicked")
 })
@@ -15,8 +15,7 @@ navHam.addEventListener("click", () =>{
 navX.addEventListener("click", () =>{
     navX.classList.toggle("x");
     navHam.classList.toggle("x");
-    navMenu.classList.toggle("slideInMenu");
-
+    navMenu.classList.remove("slideInMenu");
     console.log("clicked")
   
 })
