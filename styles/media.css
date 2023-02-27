@@ -12,10 +12,9 @@
     .nav_menu{position: absolute;
         top: 80px;
         flex-direction: column;
-        margin: 0 10px;
         text-align: center;
         background-color: rgba(157, 182, 232, 0.963);
-        width: 98%;
+        width: 100%;
         border-radius: 1em;
         left: 120%;
         transition: 0.3s ease-in;
