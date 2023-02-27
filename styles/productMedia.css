@@ -28,5 +28,10 @@ background-color: azure;
         padding: 10px 20px;
         margin: 0;
     }
+
+    .selectLoan{
+        font-size: larger;
+        padding: 0 10px;
+    }
     
 }
