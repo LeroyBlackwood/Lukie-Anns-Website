@@ -39,5 +39,7 @@
         padding: 2px 12px;
         width: 275px;
     }
-    
+    .container{
+        width: fit-content;
+    }
 }
