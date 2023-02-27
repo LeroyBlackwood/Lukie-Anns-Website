@@ -23,3 +23,9 @@ background-color: azure;
     }
 }
 
+@media screen and (max-width: 400px){
+    .loanSelectorHeader{
+        padding: 10px 20px
+    }
+    
+}
