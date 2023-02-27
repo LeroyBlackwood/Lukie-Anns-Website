@@ -131,6 +131,14 @@ color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: xx-large;
 }
+.button{width: 300px;
+    cursor: pointer;
+    padding: 8px 0;
+    font-size: larger;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: white; text-align: center;
+    box-shadow: 5px 5px 11px -1px grey}
 
 .loanInfo{
     padding: 50px;
