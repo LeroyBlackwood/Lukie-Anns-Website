@@ -17,17 +17,22 @@ background-color: azure;
         margin-top: 30px;
     }
 
-    .items{
-        margin: 0;
-        padding: 20px 50px;
-        width: 300px;
-    }
+    
 }
 
 @media screen and (max-width: 400px){
     .loanSelectorHeader, .items{
         padding: 10px 20px;
         margin: 0;
+    }
+    .loanSelector{
+        display:flex;
+        justify-content: center;
+    }
+    .items{
+        margin: 0;
+        padding: 20px 50px;
+        width: 300px;
     }
 
     .selectLoan{
