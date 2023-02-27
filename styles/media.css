@@ -4,32 +4,36 @@
         justify-content: space-between;
     }
     .logo{
-        margin-left: 10px;
-        padding-left:50px;
+        padding-left:40px;
         width: 100%;
     }
+
 
     .nav_menu{position: absolute;
         top: 80px;
         flex-direction: column;
-        margin-right: 0;
+        margin: 0 10px;
         text-align: center;
-        background-color: rgba(86, 90, 98, 0.789);
-        width: 100%;
-        border-radius: 2em;
+        background-color: rgba(157, 182, 232, 0.963);
+        width: 98%;
+        border-radius: 1em;
+        left: 120%;
+        transition: 0.3s ease-in;
     }
+    .nav_link{
+        padding: 20px 10px;
+         display: block;
+     }
 
-    .nav_link a{display: flex;
+    .nav_link a{
+        display: flex;
         width: 100%;
         border-radius: 3em;
         align-items: center;
         justify-content: center;
 
     }
-    .nav_link{
-       padding: 20px 10px;
-        display: block;
-    }
+   
     .nav_link li{
         padding: 5px 10px;
          display: block;
@@ -47,17 +51,15 @@
         align-items: center;
         justify-content: center;
         width: fit-content;
-  
     }
     .slideImage{
         width: 370px;
         height: 180px;
-
-    }.text{
+    }
+    .text{
         font-size: larger;
         text-align: left;
         align-content: center;
-
     }
     .text h1{
         text-align: center;
@@ -71,12 +73,10 @@
         align-items: end;
         margin-right: 50px;
     }
-
     .hamburgerMenu, .xMenu{
         width: 30px;
         cursor: pointer;
     }
-
     .hamburger{
         display: block;
     }
@@ -84,16 +84,8 @@
     .x{
         display: none;
     }
-    
-   
-    .nav_menu{
-        display: none;
-        left: 100%;
-
-    }
-    .slideInMenu{
+.slideInMenu{
         left: 0;
-        display: block;
-        transition: 0.8s ease-in;
+        transition: 0.3s ease-in;
     }
 }
