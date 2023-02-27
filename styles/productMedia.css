@@ -2,7 +2,6 @@
     .ContainerForCalculator{
         display:flex;
         flex-direction: column;
-background-color: azure;
         padding: 60px 0;
         justify-content: center;
         align-items: center;
@@ -37,7 +36,7 @@ background-color: azure;
 
     .selectLoan{
         font-size: larger;
-        padding: 0 12px;
+        padding: 2px 12px;
         width: 275px;
     }
     
