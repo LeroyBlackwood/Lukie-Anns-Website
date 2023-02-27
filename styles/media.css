@@ -14,7 +14,7 @@
         flex-direction: column;
         text-align: center;
         background-color: rgba(157, 182, 232, 0.963);
-        width: 95%;
+        width: 97%;
         border-radius: 1em;
         left: 120%;
         margin-left: 10px;
@@ -101,5 +101,8 @@
     .slideImage{
         width: 340px;
         height: 160px;
+    }
+    .nav_menu{
+        width: 95%;
     }
 }
