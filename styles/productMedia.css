@@ -20,6 +20,7 @@ background-color: azure;
     .items{
         margin: 0;
         padding: 20px 0;
+        width: 300px;
     }
 }
 
@@ -31,7 +32,7 @@ background-color: azure;
 
     .selectLoan{
         font-size: larger;
-        padding: 10px 15px;
+        padding: 0 12px;
         width: 275px;
     }
     
