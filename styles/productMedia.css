@@ -20,7 +20,7 @@ background-color: azure;
     .items{
         margin: 0;
         padding: 20px 50px;
-        width: 0;
+        width: 300px;
     }
 }
 
