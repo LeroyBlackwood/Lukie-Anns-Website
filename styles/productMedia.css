@@ -24,7 +24,10 @@
         display:flex;
         justify-content: center;
     }
-    .items, .loanSelectorHeader{
+    .loanSelectorHeader{
+        width: 300px;
+    }
+    .items{
         margin: 0;
         padding: 20px 50px;
         width: 300px;
