@@ -14,11 +14,10 @@
         flex-direction: column;
         text-align: center;
         background-color: rgba(157, 182, 232, 0.963);
-        width: 97%;
+        width: 95%;
         border-radius: 1em;
         left: 120%;
         margin-left: 10px;
-        margin-right: 10px;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
     }
