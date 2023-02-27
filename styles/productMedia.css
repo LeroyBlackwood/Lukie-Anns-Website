@@ -25,7 +25,8 @@ background-color: azure;
 
 @media screen and (max-width: 400px){
     .loanSelectorHeader, .items{
-        padding: 10px 20px
+        padding: 10px 20px;
+        margin: 0;
     }
     
 }
