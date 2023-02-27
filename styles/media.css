@@ -105,4 +105,11 @@
     .nav_menu{
         width: 95%;
     }
+    .text{
+        padding: 0 10px;
+    }
+    .text p{
+    padding: 0 10px;
+
+    }
 }
