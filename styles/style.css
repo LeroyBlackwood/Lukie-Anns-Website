@@ -45,7 +45,8 @@
     display: flex;
     margin-right: 50px;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    width: 100%;
     padding: 15px 0;
 }
 .nav_link{
@@ -58,6 +59,7 @@
 .nav_link a{
     text-decoration: none;
     color: black;
+    padding: 8px 10px;
 }
 .nav_link a:hover{
     color: rgb(23, 96, 191);
