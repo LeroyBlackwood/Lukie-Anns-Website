@@ -51,6 +51,13 @@
         justify-content: center;
         width: fit-content;
     }
+
+    @media screen and (max-width: 400){
+        .slideImage{
+            width: 340px;
+            height: 180px;
+        }
+    }
     .slideImage{
         width: 370px;
         height: 180px;
