@@ -52,6 +52,12 @@
         width: fit-content;
     }
 
+    @media screen and (max-width: 400px){
+        .slideImage{
+            width: 340px;
+            height: 180px;
+        }
+    }
     .slideImage{
         width: 370px;
         height: 180px;
@@ -87,11 +93,5 @@
 .slideInMenu{
         left: 0;
         transition: 0.3s ease-in;
-    }
-}
-@media screen and (max-width: 400){
-    .slideImage{
-        width: 340px;
-        height: 180px;
     }
 }
