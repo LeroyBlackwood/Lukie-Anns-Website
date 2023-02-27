@@ -20,10 +20,6 @@
 }
 
 @media screen and (max-width: 400px){
-    .loanSelectorHeader{
-        padding: 10px 20px;
-        margin: 0;
-    }
     .loanSelector{
         display:flex;
         justify-content: center;
