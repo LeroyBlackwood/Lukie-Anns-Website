@@ -23,7 +23,7 @@ schoolSupply.addEventListener("click", assign4);
 other.addEventListener("click", assign5);
 
 
-    let defaultMessage = "Please select a loan from the loan list.";
+    let defaultMessage = "Please select a loan from the loan list above.";
 typeOfLoan.textContent = defaultMessage;
 
 typeOfLoan.classList.toggle("typeOfLoan");
