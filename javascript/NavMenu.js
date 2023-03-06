@@ -1,7 +1,7 @@
 const navHam = document.querySelector(".hamburger");
 const navX = document.querySelector(".x");
 let navMenu = document.querySelector(".nav_menu")
-let navLink = document.querySelector(".nav_link")
+let navLink = document.querySelectorAll(".nav_link")
 
 
 
