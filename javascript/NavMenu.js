@@ -1,21 +1,25 @@
 const navHam = document.querySelector(".hamburger");
 const navX = document.querySelector(".x");
 let navMenu = document.querySelector(".nav_menu")
-console.log(navMenu);
+let navLink = document.querySelector(".nav_link")
+
 
 
 navHam.addEventListener("click", () =>{
     navHam.classList.toggle("x");
     navX.classList.toggle("x");
     navMenu.classList.add("slideInMenu");
-
-    console.log("clicked")
 })
 
 navX.addEventListener("click", () =>{
     navX.classList.toggle("x");
     navHam.classList.toggle("x");
     navMenu.classList.remove("slideInMenu");
-    console.log("clicked")
   
+})
+
+navLink.addEventListener("click", () =>{
+    navX.classList.toggle("x");
+    navHam.classList.toggle("x");
+    navMenu.classList.remove("slideInMenu");
 })
