@@ -1,7 +1,7 @@
 const navHam = document.querySelector(".hamburger");
 const navX = document.querySelector(".x");
 let navMenu = document.querySelector(".nav_menu")
-let navLink = document.querySelectorAll(".nav_link")
+const navLink = document.querySelectorAll(".nav_link")
 
 
 
@@ -18,8 +18,10 @@ navX.addEventListener("click", () =>{
   
 })
 
-navLink.addEventListener("click", () =>{
+navLink.forEach((n) => {
+n.addEventListener("click", () =>{
     navX.classList.toggle("x");
     navHam.classList.toggle("x");
     navMenu.classList.remove("slideInMenu");
-})
+    console.log("clicked")
+})})
