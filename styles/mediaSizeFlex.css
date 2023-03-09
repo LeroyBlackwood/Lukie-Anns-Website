@@ -174,9 +174,9 @@ footer{
 }
 
 @media screen and (max-width: 400px){
-    .images{
-        padding: 0;
-     
+    .imageAndText{
+       
+        margin: 0 10px;
     }
     .slideImage{
         width: 320px;
