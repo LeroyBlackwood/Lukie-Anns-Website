@@ -174,8 +174,11 @@ footer{
 }
 
 @media screen and (max-width: 400px){
+
+    .welcomeParagraph{
+        padding-bottom: 50px;
+    }
     .imageAndText{
-       
         margin: 0;
         padding: 0;
     }
@@ -201,9 +204,12 @@ footer{
         width: 350px;
     }
     .info p{
-        padding-top: 10px;
         margin: 50px 0 0 20px;}
 
     .requirements ul{
         margin: 0 30px 30px 20px;}
+        .requirements ul li p{
+            padding-top: 10px;
+        }
+        
 }
