@@ -189,7 +189,10 @@ footer{
     text-align: center;
 
     }
-    .requirements, .info{ 
+    .requirements{ 
+        width: 320px;
+    }
+    .info{ 
         width: 320px;
     }
 }
