@@ -196,6 +196,7 @@ footer{
         width: 350px;
     }
     .info p{
+        padding-top: 10px;
         margin: 50px 0 0 20px;}
 
     .requirements ul{
