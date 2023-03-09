@@ -191,6 +191,7 @@ footer{
     }
     .requirements{ 
         width: 350px;
+        border-bottom-right-radius: 3em;
     }
     .info{ 
         width: 350px;
