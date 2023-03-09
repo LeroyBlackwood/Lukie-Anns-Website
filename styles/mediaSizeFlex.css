@@ -175,7 +175,7 @@ footer{
 
 @media screen and (max-width: 400px){
 
-    p .welcomeParagraph{
+    p.welcomeParagraph{
         padding-bottom: 50px;
     }
     .imageAndText{
