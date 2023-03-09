@@ -45,7 +45,7 @@
   
 
     .nav_link, .nav_link a{
-        padding: 20px 10px;
+        padding: 5px 10px;
         display: block;
         color: white;
         width: 100%;
@@ -207,8 +207,7 @@ footer{
         .requirements ul li p{
             padding-top: 10px;
         }
-        .image1_Logo{
- margin-right: 10px;
-}
+        .nav_link, .nav_link a{
+            padding: 20px 10px;}
         
 }
