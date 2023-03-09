@@ -3,55 +3,57 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.hamburger{
-    display: none;
+.toggleMenu{
+    display: block;
+    background-color: black;
+    width: 35px;
+    height: 7px;
+    margin: 6px 0;
 }
-
-.x{
-    display: none;
+.nav_bar{
+    display:none;
+    margin-right: 50px;
+    padding: 0 5px;
 }
 
 .bodyOfDocument{
-    position: relative;
-    margin: 10px;
+    margin: 0 10px;
     width: auto;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(198, 198, 211, 0.241);
+    padding-bottom: 50px;
 }
 .headOfDocument{
     position: sticky;
     top:0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
 }
+
 .contentOfHeader{
     display: flex;
-    padding-top: 5px;
-    padding-bottom: 5px;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(210, 207, 212);
-    border-radius: 3em;
+    background-color: rgb(196, 167, 215);
+    box-shadow: 0 6px 7px 0 rgb(106, 71, 131);
 }
+
 .logo{
-    padding-left: 50px;
+   margin-left: 80px;
 }
 .image1_Logo{
     width: 150px;
 }
 .nav_menu{
     display: flex;
-    margin-right: 50px;
+    margin-right: 80px;
     align-items: center;
     justify-content: end;
     width: 100%;
     padding: 15px 0;
 }
-.nav_link{
+.nav_link {
     list-style: none;
-   padding: 8px 10px;
     display: inline-block;
     font-size: larger;
     font-weight: bolder;
@@ -59,38 +61,61 @@
 .nav_link a{
     text-decoration: none;
     color: black;
-    padding: 8px 10px;
+    padding: 10px;
 }
 .nav_link a:hover{
-    color: rgb(23, 96, 191);
-}
-.nav_menu li:hover{
-   background-color:beige;
-   border-radius: 3em;
-   margin: 0 10px;
+    color: white;
+    background-color: rgb(106, 51, 133);
+   border-radius: 5px;
+    transition: .3s ease;
+   
 }
 
+
 .imageAndText{
-    padding: 10px;
-    margin: 10px 0;
-    display: flex;
-    margin-bottom: 0;  
+    margin: 0 150px;
 }
+
+.info{
+    float: left;
+    background-color: blue;
+    font-size: xx-large;
+    width: 450px;
+    height: 460px;
+    border:  solid black;
+    border-bottom-left-radius: 1.5em;
+    border-top-left-radius: 1.5em;
+}
+.info h3{
+    border-top-left-radius: 1.2em;
+   text-align: center;
+   padding: 10px 0;
+    background-color: blueviolet;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.info p{
+    margin: 50px 0 0 70px;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+}
+
 .images{
+    margin: 0 auto;
     background-color: rgb(106, 51, 133);
-    padding: 10px;
-    margin: 0 20px;
-    margin-bottom: 25px;
-    width: 70%;
-    justify-content: flex-end;
+    padding: 15px;
+    width: 100%;
     border-radius: 10px;
-    border: 2px solid rgb(122, 113, 113);
+    border: 2px solid rgb(0, 0, 0);
     box-shadow: 15px 15px 12px -5px rgba(74, 70, 70, 0.344);
 }
 .slideImage{
     width: 600px;
     height: 390px;
     border-radius: 2em;
+    border: solid black;
 }
 .slideShowText p{
     display: flex;
@@ -105,32 +130,25 @@
 .text{
     font-size: larger;
     text-align: center;
-    margin-left: 0px;
-    padding: 0 30px;
+    margin-bottom: 50px;
     align-content: center;
-    margin-top: 20px;
 }
 .text h1{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-left: 70px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 110px;
+    padding: 20px 0;
+    font-style: italic;
+    text-decoration: dotted underline;
 }
 .text p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-padding: 0 40px;
 font-weight: bold;
+font-size: x-large;
 }
-
-.footer{
-    font-size: small;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-    font-style: italic;
-    background-color: rgb(109, 86, 131);
+.slSText{
+    padding: 10px 50px;
+}
+.welcomeParagraph{
+    padding-bottom: 50px;
+    border-bottom: solid;
 }
 .typesOfLoans{
     position: sticky;
@@ -149,6 +167,77 @@ font-weight: bold;
 .typesOfLoans .loanType{
     font-size: x-large;
     font-weight: bolder;
+}
+.infoSection{
+display: flex;
+justify-content: space-between;
+margin: 0 150px;
+
+}
+
+.requirements{ 
+    width: fit-content;
+    background-color: blue;
+    border-bottom-right-radius: 3em;
+    border-top-right-radius: 3em;
+    color: white;
+    border: solid black;
+}
+.requirements h3{
+    border-top-right-radius: 45px;
+    font-size: xx-large;
+    text-align: center;
+    padding: 15px 0;
+     background-color: blueviolet;
+     color: white;
+     border-bottom: 1px solid black;
+}
+.requirements ul{
+    list-style: none;
+    margin: 0 30px 30px 70px;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+}
+.requirements ul li{
+    padding-top: 45px;
+}
+
+.requirements ul li p{
+    font-size: medium;
+padding-left:20px;
+}
+footer{
+     background-color: #24292f;
+    margin: 0 10px;
+}
+.sMedia{
+    display: flex;
+    justify-content: center;
+}
+.sMedia ul{
+    list-style: none;
+}
+.sMedia ul li{
+    float: left;
+    margin: 25px 50px;
+}
+.sMedia ul li a{
+ color: white;
+ font-weight: normal;
+ text-decoration: none;
+}
+.sMedia ul li a:hover{
+    color:  blueviolet;
+   }
+.contactInfo{
+    clear: both;
+}
+.footer{
+    clear: both;
+    text-align: center;
+    font-style: italic;
+    background-color: rgb(109, 86, 131);
 }
 
 
