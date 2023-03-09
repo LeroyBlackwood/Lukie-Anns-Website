@@ -1,27 +1,15 @@
-const navHam = document.querySelector(".hamburger");
-const navX = document.querySelector(".displayX");
-let navMenu = document.querySelector(".nav_menu")
-const navLink = document.querySelectorAll(".nav_link")
+const navBar = document.querySelector(".nav_bar");
+const navMenu = document.querySelector(".nav_menu");
+const navButton = document.querySelectorAll(".nav_link");
 
-
-
-navHam.addEventListener("click", () =>{
-    navHam.classList.toggle("active");
-    navX.classList.toggle("active");
-    navMenu.classList.toggle("slideInMenu");
+navBar.addEventListener("click", () => {
+    navBar.classList.toggle("active");
+    navMenu.classList.toggle("active");
 })
 
-navX.addEventListener("click", () =>{
-    navX.classList.toggle("active");
-    navHam.classList.toggle("active");
-    navMenu.classList.toggle("slideInMenu");
-  
-})
 
-navLink.forEach((n) => {
-n.addEventListener("click", () =>{
-    navX.classList.toggle("x");
-    navHam.classList.toggle("x");
-    navMenu.classList.toggle("slideInMenu");
-    console.log("clicked")
-})})
+navButton.forEach(n => n.addEventListener("click", () => {
+    navBar.classList.remove("active");
+    navMenu.classList.remove("active");
+})
+)

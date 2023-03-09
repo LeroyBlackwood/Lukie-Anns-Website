@@ -5,13 +5,6 @@
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.toggleMenu{
-    display: block;
-    background-color: black;
-    width: 35px;
-    height: 7px;
-    margin: 6px 0;
-}
 .nav_bar{
     display:none;
     margin-right: 50px;
@@ -76,31 +69,7 @@
     margin: 0 150px;
 }
 
-.info{
-    float: left;
-    background-color: blue;
-    font-size: xx-large;
-    width: 450px;
-    height: 460px;
-    border:  solid black;
-    border-bottom-left-radius: 1.5em;
-    border-top-left-radius: 1.5em;
-}
-.info h3{
-    border-top-left-radius: 1.2em;
-   text-align: center;
-   padding: 10px 0;
-    background-color: blueviolet;
-    color: white;
-    border-bottom: 1px solid black;
-}
 
-.info p{
-    margin: 50px 0 0 70px;
-    font-size: x-large;
-    color: white;
-    font-weight: bold;
-}
 
 .images{
     margin: 0 auto;
@@ -149,6 +118,32 @@ font-size: x-large;
 .welcomeParagraph{
     padding-bottom: 50px;
     border-bottom: solid;
+}
+
+.info{
+    float: left;
+    background-color: blue;
+    font-size: xx-large;
+    width: 450px;
+    height: 460px;
+    border:  solid black;
+    border-bottom-left-radius: 1.5em;
+    border-top-left-radius: 1.5em;
+}
+.info h3{
+    border-top-left-radius: 1.2em;
+   text-align: center;
+   padding: 10px 0;
+    background-color: blueviolet;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.info p{
+    margin: 50px 0 0 70px;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
 }
 .typesOfLoans{
     position: sticky;

@@ -1,27 +1,46 @@
-@media (max-width: 900px){
+@media (max-width: 1000px){
+    .nav_bar{
+        display: flex;
+        flex-direction: column-reverse;
+        cursor: pointer;
+    }
+    .nav_bar .toggleMenu{
+        background-color: black;
+        width: 35px;
+        height: 7px;
+        margin: 3px 0;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+    }
+
+    .nav_bar.active .toggleMenu:nth-child(2){
+                opacity: 0;
+        }
+    .nav_bar.active .toggleMenu:nth-child(1){
+            transform: rotate(45deg) translate(-3px, -15px);
+        }
+    .nav_bar.active .toggleMenu:nth-child(3){
+            transform: rotate(-45deg) translate(-3px, 15px);
+        }
 
     .contentOfHeader{
         display: flex;
         justify-content: space-between;
     }
-    .logo{
-        padding-left:40px;
-        width: 100%;
-    }
-
-
-    .nav_menu{position: fixed;
+    .nav_menu{
+        position: fixed;
         top: 90px;
         flex-direction: column;
         text-align: center;
         background-color: rgba(34, 35, 38, 0.963);
         width: 97%;
-
         border-radius: 1em;
-        left: 120%;
-        margin-left: 10px;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        left: 100%;
+        transition: all 0.3s ease;
+    }
+.nav_menu.active{
+    left: 0;
+    margin-left: 10px;
     }
   
 
@@ -38,61 +57,125 @@
     
      .imageAndText{
         flex-direction: column-reverse;
-        align-items: center; 
+        align-items: center;
+        margin: 0 20px;
     }
     .images{
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 10px;
         width: fit-content;
     }
 
  
     .slideImage{
-        width: 600px;
-        height: 370px;
+        width: 400px;
+        height: 320px;
+    }
+    .slSText{
+        padding: 0;
     }
     .text{
         font-size: larger;
-        text-align: left;
-        align-content: center;
     }
     .text h1{
+        font-size: 80px;
         text-align: center;
-        margin-left: 0;
-        border-top: 1px solid;
         padding-top: 20px;
-        margin-top: 0;
-    }
-    .nav_bar{
-        display: flex;
-        align-items: end;
-        margin-right: 50px;
-    }
-    .hamburgerMenu, .xMenu{
-        width: 30px;
-        cursor: pointer;
-    }
-    .hamburger{
-        display: block;
     }
 
-    .active{
-        display: none;
-    }
-    .slideOutMenu{
-        display: none;
-    }
-.slideInMenu{
-    display: block;
-        left: 0;
-        transition: 0.3s ease-in;
-    }
+    .info{
+    background-color: blue;
+    font-size: x-large;
+    width: 400px;
+    height: 370px;
+    border:  solid black;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+        margin-bottom: 20px;
+}
+.info h3{
+    border-top-left-radius: 0;
+   text-align: center;
+   padding: 10px 0;
+    background-color: blueviolet;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.info p{
+    margin: 50px 0 0 70px;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+}
+.infoSection{
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items: center;
+margin: 0 10px;
+
+}
+
+.requirements{ 
+    width: 400px;
+    background-color: blue;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    color: white;
+    border: solid black;
+}
+.requirements h3{
+    border-top-right-radius: 0;
+    font-size: x-large;
+    text-align: center;
+    padding: 15px 0;
+     background-color: blueviolet;
+     color: white;
+     border-bottom: 1px solid black;
+}
+.requirements ul{
+    list-style: none;
+    margin: 0 30px 30px 70px;
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+}
+.requirements ul li{
+    padding-top: 45px;
+}
+
+.requirements ul li p{
+    font-size: medium;
+}
+footer{
+     background-color: #24292f;
+    margin: 0 10px;
+}
+.sMedia{
+    display: flex;
+    justify-content: center;
+}
+.sMedia ul li{
+    clear: both;
+    margin: 25px 50px;
+}
+.sMedia ul li a{
+ color: white;
+}
+.sMedia ul li a:hover{
+    color:  blueviolet;
+   }
+.contactInfo{
+        clear: both;}
+
 }
 
 @media screen and (max-width: 400px){
     .slideImage{
-        width: 340px;
+        width: 320px;
         height: 160px;
     }
     .nav_menu{
