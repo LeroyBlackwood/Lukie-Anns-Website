@@ -195,4 +195,6 @@ footer{
     .info{ 
         width: 350px;
     }
+    .requirements ul{
+        margin: 0 30px 30px 30px;}
 }
