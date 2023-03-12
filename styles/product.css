@@ -156,10 +156,11 @@ margin: 20px;
 }
 
 .loanTypeDisplay{
+    place-items: center;
+    text-align: center;
     font-size: x-large;
 padding: 0 0 0 30px;
 margin: 20px;
-height: 1em;
 
 
 }
