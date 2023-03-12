@@ -149,14 +149,14 @@ border-top: double;
 }
 
 .h2Loan{
-    font-size: medium;
+font-size: xx-large;
 padding: 0 0 0 30px;
 margin: 20px;
 
 }
 
 .loanTypeDisplay{
-    font-size: large;
+    font-size: x-large;
 padding: 0 0 0 30px;
 margin: 20px;
 height: 1em;
@@ -166,10 +166,10 @@ height: 1em;
 
 .loanDetails{
 padding: 0 10px;
-border-bottom: 1px dashed black ;
+border-bottom: 2px dashed black ;
 width: 62%;
-height: 3em;
-font-size:small;
+height: 1.5em;
+font-size: larger;
 margin: 20px 0 20px 50px;
 
-} 
+}
