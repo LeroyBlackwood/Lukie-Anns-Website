@@ -144,15 +144,21 @@ color: black;
 
 
 .loanInformation{
-border: solid;
-border-top: double;
+border: double black 2px;
 }
 
 .h2Loan{
+    padding: 0 0 0 30px;
 font-size: xx-large;
-padding: 0 0 0 30px;
 margin: 20px;
 
+
+}
+.loanTypeDisplayClass{
+    background-color: azure;
+    width: 100%;
+    padding:25px 30px;
+    border-bottom: solid ;
 }
 
 .loanTypeDisplay{
@@ -160,7 +166,6 @@ margin: 20px;
     text-align: center;
     font-size: x-large;
 padding: 0 0 0 30px;
-margin: 20px;
 
 
 }
