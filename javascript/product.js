@@ -16,6 +16,12 @@ var totalAmountPayable = document.querySelector("#totalPayment");
 
 const button = document.querySelector(".button");
 
+const loanInfo = document.querySelector(".loanTypeDisplay");
+const loanDetails1 = document.querySelector("#p1");
+const loanDetails2 = document.querySelector("#p2");
+const loanDetails3 = document.querySelector("#p3");
+const loanDetails4 = document.querySelector("#p4");
+
 vehicle.addEventListener("click", assign1);
 payDay.addEventListener("click", assign2);
 tuition.addEventListener("click", assign3);
@@ -23,7 +29,7 @@ schoolSupply.addEventListener("click", assign4);
 other.addEventListener("click", assign5);
 
 
-    let defaultMessage = "Please select a loan from the loan list above.";
+    let defaultMessage = "Please select a loan from the loan list.";
 typeOfLoan.textContent = defaultMessage;
 
 typeOfLoan.classList.toggle("typeOfLoan");
@@ -91,15 +97,14 @@ function assign5(){
 var value;
 var monthlyPaymentTotal;
 
-
-
-
-let borrowAmountText = parseFloat(borrowAmount).value;
+let borrowAmountText = parseFloat(borrowAmount.value);
 let interestRateText = parseFloat(interestRate.value);
 let period = parseFloat(timePeriod.value);
 
 let interest = interestRateText / 12 /100;
 
+let result2;
+let result1;
 
 const calculate = () => {
     let payment =
@@ -118,9 +123,9 @@ const updateData = (payment) => {
         if(interestRateText >= 8 && interestRateText < 49){
                 if(period >= 3 && period < 601){
 
-    let result1 = Math.round(payment*100)/100;
+    result1 = Math.round(payment*100)/100;
     monthlyAmountPayable.textContent = "$ " + result1;
-    let result2 = Math.round(period * (payment*100))/100;
+    result2 = Math.round(period * (payment*100))/100;
     totalAmountPayable.textContent = "$ " + result2;}}}
     else{
         monthlyAmountPayable.textContent = "Invalid Values";
@@ -142,6 +147,31 @@ const result = () => {
 };
 
 button.addEventListener("click", () => {
-        result();
+    result(); 
+    
+    if(monthlyAmountPayable.textContent != "Invalid Values"){
+        if(monthlyAmountPayable.textContent != "$ 0.00")
+                loanInfo.textContent = typeOfLoan.textContent;
+                loanDetails1.textContent = `
+                Your Monthly payment will be
+                $${result1} per month for a period of ${period}
+                months or ${period / 12} year/s
+                `
+            loanDetails2.textContent = `
+            The amount borrowed is $${borrowAmountText}`
+    
+            loanDetails3.textContent = `
+            The interest is ${interestRate.value}%
+            which amounts to
+            $${Math.round(((result2 - borrowAmountText)*100))/100}
+            `
+    
+            loanDetails4.textContent =
+            `
+            The total amount to repay is $${result2}
+            `
+     };  
 })
+
+
 
