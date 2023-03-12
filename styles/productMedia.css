@@ -80,7 +80,30 @@
     }
   
     .loanInformation{
-        width: 300px;
+        border: solid;
+        border-top: double;
+        width: 600px;
         margin: 0 auto;
+        }
+        
+        .h2Loan{
+        padding: 0 0 0 30px;
+        margin: 20px;
+        }
+        
+        .loanTypeDisplay{
+        padding: 0 0 0 10px;
+        margin: 20px;
+        height: fit-content;
+        width: fit-content;
+        
+        
+        }
+        
+        .loanDetails{
+        padding: 10px 20px;
+        border-bottom: 2px dashed rgb(139, 136, 136) ;
+        height: fit-content;
+
         }
 }
