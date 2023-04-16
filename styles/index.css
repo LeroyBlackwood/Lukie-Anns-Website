@@ -12,3 +12,11 @@
 .imageAndText{
     margin: 0 150px;
 }
+
+@media (max-width: 1000px){
+    .imageSize{
+        width: 400px;
+    height: 220px;
+    }
+    
+}

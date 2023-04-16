@@ -4,13 +4,18 @@ height: 25px;
 
 .loanSelector{
 height: 325px;
+width: 33.3%;
 }
 
-.items{
+.resultBox{
+    margin-top: 20%;
 }
-.selectLoan{
+.button:hover{
+cursor: pointer;
+color: rgb(146, 92, 20);
+}
 
-}
+
 .selectLoan:hover{
     cursor: pointer;
 
@@ -19,33 +24,12 @@ height: 325px;
 .loanSelectorHeader{
 background-color: aqua;
 }
-.loanSelectorHeader h2{
-
+.loanType{ padding-top: 3px;
+    color:red;
+    font-size: 12px;
 }
-.button{
-}
-    .button a{
-    
+.loanInformation{
+    border: solid;
+    border-top: double;
     }
 
-
-.loanInformation{
-
-}
-
-.h2Loan{
-
-}
-.loanTypeDisplayClass{
- 
-}
-
-.loanTypeDisplay{
-
-
-}
-
-.loanDetails{
-
-
-}

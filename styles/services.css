@@ -3,3 +3,11 @@
     height: 620px;
     border:1px black solid ;
 }
+
+@media (max-width: 1000px){
+    .imageService{
+        width: 400px;
+    height: 220px;
+    }
+    
+}

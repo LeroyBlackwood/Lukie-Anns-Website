@@ -1,11 +1,11 @@
 
 const typeOfLoan = document.querySelector("#loanType");
 
-const vehicle = document.querySelector("#vehicleLoan");
+const personalLoan = document.querySelector("#personalLoan");
+const vehicle = document.querySelector("#autoLoan");
 const payDay = document.querySelector("#payDayLoan");
-const tuition = document.querySelector("#tuitionLoan");
+const tuition = document.querySelector("#studentLoan");
 const schoolSupply = document.querySelector("#schoolSupplyLoan");
-const other = document.querySelector("#other");
 
 const borrowAmount = document.querySelector("#borrowAmount");
 const interestRate = document.querySelector("#interestRate");
@@ -14,7 +14,7 @@ const timePeriod = document.querySelector("#period");
 const monthlyAmountPayable = document.querySelector("#monthlyPayment");
 var totalAmountPayable = document.querySelector("#totalPayment");
 
-const button = document.querySelector(".button");
+const button = document.querySelector("#button");
 
 const loanInfo = document.querySelector(".loanTypeDisplay");
 const loanDetails1 = document.querySelector("#p1");
@@ -26,7 +26,7 @@ vehicle.addEventListener("click", assign1);
 payDay.addEventListener("click", assign2);
 tuition.addEventListener("click", assign3);
 schoolSupply.addEventListener("click", assign4);
-other.addEventListener("click", assign5);
+personalLoan.addEventListener("click", assign5);
 
 
     let defaultMessage = "Please select a loan from the loan list.";
@@ -38,8 +38,8 @@ function assign1(){
 if(vehicle){
    typeOfLoan.textContent = vehicle.textContent;
    console.log(typeOfLoan.textContent);
-   value = "  40";
-   months = "  144";
+   value = "  10";
+   months = "  120";
    interestRate.value = value;
    timePeriod.value = months;
    typeOfLoan.classList.remove("typeOfLoan");
@@ -52,7 +52,7 @@ function assign2(){
         typeOfLoan.textContent = payDay.textContent;
         console.log(typeOfLoan.textContent);
         value = "  30";
-        months = "  6";
+        months = "  3";
         interestRate.value = value;
         timePeriod.value = months;
         typeOfLoan.classList.remove("typeOfLoan");
@@ -62,7 +62,7 @@ function assign3(){
     if(tuition){
         typeOfLoan.textContent = tuition.textContent;
         console.log(typeOfLoan.textContent);
-        value = "  20";
+        value = "  35";
         months = "  60";
         interestRate.value = value;
         timePeriod.value = months;
@@ -73,7 +73,7 @@ function assign4(){
     if(schoolSupply){
         typeOfLoan.textContent = schoolSupply.textContent;
         console.log(typeOfLoan.textContent);
-        value = "  15";
+        value = "  20";
         months = "  12";
         interestRate.value = value;
         timePeriod.value = months;
@@ -82,10 +82,10 @@ function assign4(){
 }
 
 function assign5(){
-    if(other){
-       typeOfLoan.textContent = other.textContent;
+    if(personalLoan){
+       typeOfLoan.textContent = personalLoan.textContent;
        console.log(typeOfLoan.textContent);
-       value = "  35";
+       value = "  30";
        interestRate.value = value;
        months = "  36";
        timePeriod.value = months;
@@ -94,6 +94,7 @@ function assign5(){
         }
     }
 
+    
 var value;
 var monthlyPaymentTotal;
 
