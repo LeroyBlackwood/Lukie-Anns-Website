@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navBarHamburger{
+    display:none;
+    margin-right: 50px;
+    padding: 0 5px;
+}
+
+.bodyOfDocument{
+    margin: 0 10px;
+    width: auto;
+    height: 100%;
+    background-color: rgba(198, 198, 211, 0.241);
+    padding-bottom: 50px;
+}
+/*.headOfDocument{
+    position: sticky;
+    top:0;
+}*/
+
+.contentOfHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(196, 167, 215);
+    box-shadow: 0 6px 7px 0 rgb(106, 71, 131);
+}
+
+.logo{
+   margin-left: 50px;
+}
+.image1_Logo{
+    width: 120px;
+}
+.nav_menu{
+    display: flex;
+    margin-right: 80px;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    padding: 15px 0;
+}
+.nav_link {
+    list-style: none;
+    display: inline-block;
+    font-size: larger;
+    font-weight: bolder;
+}
+.nav_link a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.nav_link a:hover{
+    color: white;
+    background-color: rgb(106, 51, 133);
+   border-radius: 5px;
+    transition: .3s ease;
+   
+}
+
+
+
+.text{
+    font-size: larger;
+    text-align: center;
+    margin-bottom: 50px;
+    align-content: center;
+}
+.text h1{
+    font-size: 110px;
+    padding: 20px 0;
+    font-style: italic;
+    text-decoration: dotted underline;
+}
+.text p{
+font-weight: bold;
+font-size: x-large;
+}
+.slSText{
+    padding: 10px 50px;
+}
+.welcomeParagraph{
+    padding-bottom: 50px;
+    border-bottom: solid;
+}
+
+.info{
+    float: left;
+    background-color: blue;
+    font-size: xx-large;
+    width: 450px;
+    height: 460px;
+    border:  solid black;
+    border-bottom-left-radius: 1.5em;
+    border-top-left-radius: 1.5em;
+}
+.info h3{
+    border-top-left-radius: 1.2em;
+   text-align: center;
+   padding: 10px 0;
+    background-color: blueviolet;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.info p{
+    margin: 50px 0 0 70px;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+}
+.typesOfLoans{
+    position: sticky;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid;
+    justify-content: center;
+    background-color: rgb(171, 162, 162);
+}
+.typesOfLoans .loanType{
+    list-style: none;
+    display: inline-flex;
+    padding: 10px 30px;
+}
+.typesOfLoans .loanType{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.infoSection{
+display: flex;
+justify-content: space-between;
+margin: 0 150px;
+
+}
+
+.requirements{ 
+    width: fit-content;
+    background-color: blue;
+    border-bottom-right-radius: 3em;
+    border-top-right-radius: 3em;
+    color: white;
+    border: solid black;
+}
+.requirements h3{
+    border-top-right-radius: 45px;
+    font-size: xx-large;
+    text-align: center;
+    padding: 15px 0;
+     background-color: blueviolet;
+     color: white;
+     border-bottom: 1px solid black;
+}
+.requirements ul{
+    list-style: none;
+    margin: 0 30px 30px 70px;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+}
+.requirements ul li{
+    padding-top: 45px;
+}
+
+.requirements ul li p{
+    font-size: medium;
+padding-left:20px;
+}
+
+
+footer{
+     background-color: #24292f;
+    margin: 0 10px;
+}
+.footerSocialMedia{
+    display: flex;
+    justify-content: center;
+}
+.footerSocialMedia ul li{
+    list-style: none;
+    float: left;
+    margin: 25px 50px;
+}
+.footerSocialMedia ul li a{
+ color: white;
+ font-weight: normal;
+ text-decoration: none;
+}
+.footerSocialMedia ul li a:hover{
+    color:  blueviolet;
+   }
+.footer{
+    text-align: center;
+    font-style: italic;
+    background-color: rgb(109, 86, 131);
+}
+
+
+
+
+
+

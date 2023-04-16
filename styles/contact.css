@@ -1,0 +1,22 @@
+.boxWidth{
+    width: 100%;
+    height: 35px;  
+}
+.sectionMargin{
+    margin: 0 10px;
+}
+.removeDot{
+    list-style: none;
+}
+.font{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.bodyOfDocument{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+footer{
+    position: sticky;
+    border: 0;
+}

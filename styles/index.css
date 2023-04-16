@@ -1,0 +1,14 @@
+.imageSize{
+    width: 800px;
+    height: 620px;
+    border:1px black solid ;
+}
+
+.promoFormat{
+    color: rgb(104, 91, 21);
+    text-decoration: underline;
+}
+
+.imageAndText{
+    margin: 0 150px;
+}

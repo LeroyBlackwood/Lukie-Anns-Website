@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/calculator.css">
+    <link rel="stylesheet" href="styles/mediaSizeFlex.css">
+    <link rel="stylesheet" href="styles/productMedia.css">
+    <link rel="stylesheet" href="styles/mainStyleForAllPages.css">
+    <link rel="stylesheet" href="styles/mediaSizeFlexAllPages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Lukie-Ann's Loans</title>
+    <style>
+        span{
+    background-color: rgb(240, 240, 240);padding: 0 5px;
+    text-align: center; display: flex; justify-content: space-between;
+    align-items: center; width: fit-content; font-size: larger;
+    border: 1px solid; gap: 5px;}
+    </style>
+</head>
+<body>
+    <div class="bodyOfDocument">
+        <header class="headOfDocument">
+            <div class="contentOfHeader">
+            <div class="logo">
+                <a href="index.html"><img class="image1_Logo" src="images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="nav_menu">
+                <ul>
+                    <li class="nav_link ">
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="Services.html">SERVICES</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="Finance.html">FINANCE</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="calculator.html">CALCULATOR</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="aboutUs.html">ABOUT US</a>
+                    </li>
+            </div>
+           
+            <div class="navBarHamburger">
+                <span class="toggleMenu"></span>
+                <span class="toggleMenu"></span>
+                <span class="toggleMenu"></span>
+        </div>
+        </div>
+        </header>
+
+        <div class="ContainerForCalculator d-flex justify-content-between px-5">
+            
+            <div class="loanSelector bg-primary-subtle  w-25 my-5 pb-1">
+                <h2 class="loanSelectorHeader p-3 text-center">
+                    Loan List
+                </h2>
+            
+                <div class="items ">
+                   <div class="selectLoan border-bottom border-light d-flex justify-content-center" id="personalLoan">
+                        <p>
+                            Personal Loan
+                        </p> 
+                    </div>
+                    <div class="selectLoan border-bottom border-light d-flex justify-content-center"  id="autoLoan">
+                        <p>
+                            Auto Loans
+                        </p> 
+                    </div>
+                    <div class="selectLoan border-bottom border-light d-flex justify-content-center" id="studentLoan">
+                        <p>
+                            Student Loans
+                        </p>
+                    </div>
+                    <div class="selectLoan border-bottom border-light d-flex justify-content-center" id="schoolSupplyLoan">
+                        <p>
+                            School Supplies
+                        </p>
+                    </div>
+                    <div class="selectLoan border-bottom border-light d-flex justify-content-center" id="debtCon">
+                        <p>
+                            Debt Consolidation
+                        </p> 
+                    </div>
+                    <div class="selectLoan d-flex justify-content-center" id="loanRef">
+                        <p>
+                            Loan Refinancing
+                        </p> 
+                    </div>
+                </div>
+            </div>
+       
+
+            
+        <div class="loanSelector bg-primary-subtle  w-25 my-5 pb-1">
+            <form action="">
+            <div class="loanSelectorHeader">
+                <h3 class="loanSelectorHeader p-2 text-center">
+                    Loan Selector
+                </h3>
+            </div>
+        
+            <div class="items p-2">
+                <div>
+                <div>Type of Loan:
+            <div class="loanType bg-light border border-black rounded ps-2" id="loanType">
+            </div>
+        </div>
+                <div>
+                    <label for="borrowAmount">
+                        Borrow Amount:
+                    </label>
+                    <br>
+                    <span class="rounded">$
+                        <input type="text" name="borrowAmount" id="borrowAmount"
+                        value="" 
+                        placeholder="00"
+                        class="borrowAmount w-100 bg-light ps-2 rounded" required>
+                        .00
+                    </span>
+                </div>
+
+            <br>
+            <div>
+                <label for="interestRate">
+                    Interest Rate:
+                </label>
+            <br>
+                <span class="rounded">
+                    <input type="text" name="interestRate" id="interestRate" 
+                    value="" 
+                    class="w-100 interestRate bg-light ps-2 rounded"
+                    placeholder="0.0"
+                 required>
+                    %
+                </span>
+            </div>
+
+        <br>
+
+            <div>
+                <label for="period">
+                            Period:
+                        </label>
+                    <br>
+                <span class="period w-50 rounded">
+                    <input type="text" name="period"
+                        id="period" value=""  style=" font-size: 18px; padding: 1px 0 0 5px;"
+                        placeholder="00"
+                        class="period w-100 bg-light ps-2 rounded" required>
+                        Mths.
+                    </span>
+                </div>
+                <br>
+            <div>
+                <div class="button"><a href="#Loan Information">Calculate</a></div>
+            </div>
+        </div>
+
+            </div>
+
+            </form>
+           
+            <div class="resultBox">
+                <div class="mPayment">
+                    <h4>
+                        Monthly Payment:
+                    </h4>
+                <p id="monthlyPayment"  class="monthlyPayment">$ 0.00</p>
+            </div>
+           
+          <div class="tPayment">
+            <h4>
+                 Total Payment:
+            </h4>
+                <p id="totalPayment" class="totalPayment">$ 0.00</p>
+            </div>
+        </div>
+            </div></div>
+
+         <h4 class="h2Loan">
+                Loan information will appear here:
+            </h4> 
+
+            <div class="loanInformation w-100">
+                    
+                    <div Class="loanTypeDisplayClass"><h3 class="loanTypeDisplay"></h3></div>
+                <P class="loanDetails" id="p1">
+                </P>
+                <P class="loanDetails" id="p2">
+                </P>
+                <P class="loanDetails" id="p3">
+                </P>
+                <P class="loanDetails" id="p4">
+                </P>
+        </div> 
+   </div>
+   <div>
+    <footer>
+        <div class="footerSocialMedia">
+            <ul>
+                <li>
+                   <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"> Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.whatsapp.com/" target="_blank" class="fa fa-whatsapp"> Whatsapp</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"> Instagram</a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank" class="fa fa-twitter"> Twitter</a>
+                </li>
+            </ul>
+        </div>
+        <P class="footer">
+           &copy; Group 1 Second Semester, 2023
+        </P>
+    </footer>
+</div>
+    <script src="javascript/Calculator.js"></script>
+    <script src="javascript/NavMenuAllPages.js"></script>
+</body>
+</html>
