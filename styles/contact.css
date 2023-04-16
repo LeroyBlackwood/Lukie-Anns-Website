@@ -12,6 +12,9 @@
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
 }
+.contact{
+    background: purple;
+}
 .bodyOfDocument{
     margin-bottom: 0;
     padding-bottom: 0;
