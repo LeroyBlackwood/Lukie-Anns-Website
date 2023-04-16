@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/mainStyleForAllPages.css">
     <link rel="stylesheet" href="styles/mediaSizeFlex.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/contact.css">
 
     <title>Lukie-Ann's Loans</title>
 </head>
@@ -23,107 +25,119 @@
                         <a href="index.html">HOME</a>
                     </li>
                     <li class="nav_link">
-                        <a href="product.html">PRODUCT</a>
+                        <a href="Services.html">SERVICES</a>
                     </li>
                     <li class="nav_link">
-                        <a href="aboutUs.html">ABOUT US</a>
+                        <a href="Finance.html">FINANCE</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="calculator.html">CALCULATOR</a>
                     </li>
                     <li class="nav_link">
                         <a href="contact.html">CONTACT</a>
                     </li>
-                </ul>
+                    <li class="nav_link">
+                        <a href="aboutUs.html">ABOUT US</a>
+                    </li>
             </div>
            
-            <div class="nav_bar">
+            <div class="navBarHamburger">
                 <span class="toggleMenu"></span>
                 <span class="toggleMenu"></span>
                 <span class="toggleMenu"></span>
         </div>
         </div>
         </header>
+        <div class=" text-center mt-5 fs-3 font">
+            Contacts
+        </div>
+
+        <div class="d-flex justify-content-around my-3">
+            <div>
+                <div>
+                    Telephone: 1876 000 0000
+                </div>
+                <div>
+                    Email: lukieannloan@gmail.com
+                </div>
+            </div>
+    
+                <div>
+                    <div>
+                        <ul class="removeDot">
+                            <li>
+                               <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook navbar-brand"> Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://www.whatsapp.com/" target="_blank" class="fa fa-whatsapp navbar-brand"> Whatsapp</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram navbar-brand"> Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://web.whatsapp.com/" target="_blank" class="fa fa-twitter navbar-brand"> Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="bg-dark text-white h-100">
+                <form action="contact_us.php" class="container">
+                    
+                        <div class=" text-center pt-5">
+                            Have a Question, shoot us a message!
+
+                        </div>
+            <div class="d-flex justify-content-around my-3">
+                <div  class="px-3 w-50">
+                    <label for="firstName">
+                        First Name:
+                    </label>
+                     <input type="text" placeholder="Example: Joe" name="firstName" value="" class=" boxWidth border border-black rounded" required>
+                </div>
+                
+                <div class="px-3 w-50">
+                    <label for="lastName">
+                        Last Name:
+                    </label>
+                    <input type="text" placeholder="Example: smith" name="lastName" value=""
+                    class="boxWidth border border-black rounded"required>
+                </div>
+            </div>
+
+                <div class="d-flex justify-content-around my-3">
+           
+                <div class="px-3 w-50">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Example: abc@gmail.com" name="email" value="" class=" boxWidth border border-black rounded" required>
+                </div>
+                <div class="px-3 w-50">
+                    <label for="Telephone">Telephone:</label>
+                    <input type="tel" placeholder="Example: 1876 0000000" name="Telephone" value="" class=" boxWidth border border-black rounded " required>
+                </div>
+            </div>
+            <div class="px-3">
+                <label for="help">What can we help you with?</label>
+                <select id="help" name="help" class=" boxWidth border border-black rounded ">
+                  <option value="loan">Loans</option>
+                  <option value="technical support">Technical Support</option>
+                  <option value="general enquiry">General Enquiry</option>
+                  <option value="other">Other</option>
+                </select>            
+            </div>
+                <div class="m-3">
+                    <label for="Message">Message:</label>
+                <textarea name="Message" id="" cols="30" rows="10" class="w-100 border border-black rounded"></textarea>
+                </div>
+
+                <input type="button" value="Submit" class="px-1 border border-black rounded m-3">
+                </form>
+            </div>
     </div>
-    <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #6A4783;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #6A4783;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #C4A7D7;
-  padding: 20px;
-}
-</style>
-</head>
-<body>
-
-<h2>Contact Us</h2>
-
-<div class="container">
-  <form action="/action_page.php">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name...">
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your email address...">
-
-    <label for="help">What can we help you with?</label>
-    <select id="help" name="help">
-      <option value="loan">Loans</option>
-      <option value="technical support">Technical Support</option>
-      <option value="general enquiry">General Enquiry</option>
-      <option value="other">Other</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
-</body>
-</html>
-
     <footer>
-        <div class="sMedia">
+        <div class="footerSocialMedia">
             <ul>
                 <li>
                    <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"> Facebook</a>
@@ -143,6 +157,7 @@ input[type=submit]:hover {
            &copy; Group 1 Second Semester, 2023
         </P>
     </footer>
+    <script src="js/bootstrap.bundle.js"></script>
     <script src="javascript/NavMenu.js"></script>
 </body>
 </html>
