@@ -1,3 +1,8 @@
+.ContainerForCalculator{
+    display: flex;
+    justify-content: space-between;
+}
+
 .loanType{
 height: 25px;
 }
@@ -24,11 +29,28 @@ cursor: pointer;
 background-color: aqua;
 }
 .loanType{ padding-top: 3px;
-    color:red;
+    /*color:red;*/
     font-size: 12px;
 }
 .loanInformation{
     border: solid;
     border-top: double;
+    }
+    .resultBox, .loanSelector, .loanCalDiv{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+   
+
+    @media (max-width: 600px) {
+        .ContainerForCalculator{
+            display: block;
+        }
+        .resultBox, .loanSelector, .loanCalDiv{
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+    
     }
 

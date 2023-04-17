@@ -71,15 +71,7 @@
 
 
 
-.images{
-    margin: 0 auto;
-    background-color: rgb(106, 51, 133);
-    padding: 15px;
-    width: 100%;
-    border-radius: 10px;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 15px 15px 12px -5px rgba(74, 70, 70, 0.344);
-}
+
 .slideImage{
     width: 600px;
     height: 390px;
@@ -115,10 +107,7 @@ font-size: x-large;
 .slSText{
     padding: 10px 50px;
 }
-.welcomeParagraph{
-    padding-bottom: 50px;
-    border-bottom: solid;
-}
+
 
 .info{
     float: left;

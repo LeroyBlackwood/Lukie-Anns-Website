@@ -3,11 +3,22 @@
     height: 620px;
     border:1px black solid ;
 }
+.textSize{
+    font-size: small;
+}
 
-@media (max-width: 1000px){
+@media (max-width: 900px){
     .imageService{
-        width: 400px;
-    height: 220px;
+        width: 600px;
+    height: 320px;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .imageService{
+        width: 330px;
+    height: 150px;
     }
     
 }
