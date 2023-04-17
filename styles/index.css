@@ -13,10 +13,18 @@
     margin: 0 150px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 900px){
     .imageSize{
-        width: 400px;
-    height: 220px;
+        width: 600;
+    height: 320px;
+    }
+    
+}
+
+@media (max-width: 600){
+    .imageSize{
+        width: 350;
+    height: 170px;
     }
     
 }
