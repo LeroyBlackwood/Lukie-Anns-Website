@@ -21,7 +21,7 @@
     
 }
 
-@media (max-width: 600){
+@media (max-width: 600px){
     .imageSize{
         width: 350px;
     height: 170px;
