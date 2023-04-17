@@ -1,4 +1,11 @@
 .formFormatting{
     width: 33.33%;
+
 }
 
+@media(max-width: 400px){
+    .formFormatting{
+        font-size: small;
+    }
+    
+}
