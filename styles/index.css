@@ -15,7 +15,7 @@
 
 @media (max-width: 900px){
     .imageSize{
-        width: 600;
+        width: 600px;
     height: 320px;
     }
     
@@ -23,7 +23,7 @@
 
 @media (max-width: 600){
     .imageSize{
-        width: 350;
+        width: 350px;
     height: 170px;
     }
     
