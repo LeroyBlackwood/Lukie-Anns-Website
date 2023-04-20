@@ -165,12 +165,11 @@ button.addEventListener("click", () => {
     
     if(monthlyAmountPayable.textContent != "Invalid Values"){
         if(monthlyAmountPayable.textContent != "$ 0.00"){
-        if(typeOfLoan.textContent != "defaultMessage")
                 loanInfo.textContent = typeOfLoan.textContent;
                 loanDetails1.textContent = `
                 Your Monthly payment will be
                 $${result1} per month for a period of ${period}
-                months or ${math.round(period / 12)} year/s
+                months or ${math.round(((period / 12)*100))/100} year/s
                 `
             loanDetails2.textContent = `
             The amount borrowed is $${borrowAmountText}`
