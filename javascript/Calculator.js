@@ -169,7 +169,7 @@ button.addEventListener("click", () => {
                 loanDetails1.textContent = `
                 Your Monthly payment will be
                 $${result1} per month for a period of ${period}
-                months or ${Math.round((period / 12)*100)} year/s
+                months or ${Math.round((period / 12)*100)/100} year/s
                 `
             loanDetails2.textContent = `
             The amount borrowed is $${borrowAmountText}`
