@@ -165,6 +165,7 @@ button.addEventListener("click", () => {
     
     if(monthlyAmountPayable.textContent != "Invalid Values"){
         if(monthlyAmountPayable.textContent != "$ 0.00")
+        if(typeOfLoan.textContent != "defaultMessage")
                 loanInfo.textContent = typeOfLoan.textContent;
                 loanDetails1.textContent = `
                 Your Monthly payment will be
