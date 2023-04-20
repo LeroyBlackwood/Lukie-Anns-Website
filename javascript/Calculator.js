@@ -37,6 +37,8 @@ typeOfLoan.textContent = defaultMessage;
 
 if(typeOfLoan.textContent = defaultMessage){
     typeOfLoan.style.color = "red";
+}else{
+    typeOfLoan.style.color = "black";
 }
 
 typeOfLoan.classList.toggle("typeOfLoan");
