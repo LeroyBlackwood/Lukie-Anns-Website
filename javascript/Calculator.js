@@ -32,7 +32,12 @@ other.addEventListener("click", assign6);
 
 
     let defaultMessage = "Please select a loan from the loan list.";
+
 typeOfLoan.textContent = defaultMessage;
+
+if(typeOfLoan.textContent = defaultMessage){
+    typeOfLoan.style.color = "red";
+}
 
 typeOfLoan.classList.toggle("typeOfLoan");
 
