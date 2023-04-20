@@ -164,12 +164,12 @@ button.addEventListener("click", () => {
     result(); 
     
     if(monthlyAmountPayable.textContent != "Invalid Values"){
-        if(monthlyAmountPayable.textContent != "$ 0.00"){
+        if(monthlyAmountPayable.textContent != "$ 0.00")
                 loanInfo.textContent = typeOfLoan.textContent;
                 loanDetails1.textContent = `
                 Your Monthly payment will be
                 $${result1} per month for a period of ${period}
-                months or ${math.round(((period / 12)*100))/100} year/s
+                months or ${period / 12} year/s
                 `
             loanDetails2.textContent = `
             The amount borrowed is $${borrowAmountText}`
@@ -184,7 +184,7 @@ button.addEventListener("click", () => {
             `
             The total amount to repay is $${result2}
             `
-     } };  
+     };  
 })
 
 
