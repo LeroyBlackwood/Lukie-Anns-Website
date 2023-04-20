@@ -37,7 +37,7 @@ typeOfLoan.textContent = defaultMessage;
 
 if(typeOfLoan.textContent = defaultMessage){
     typeOfLoan.style.color = "red";
-}else{
+}else if(typeOfLoan.textContent != defaultMessage){
     typeOfLoan.style.color = "black";
 }
 
