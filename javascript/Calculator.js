@@ -28,7 +28,7 @@ payDay.addEventListener("click", assign2);
 tuition.addEventListener("click", assign3);
 schoolSupply.addEventListener("click", assign4);
 personalLoan.addEventListener("click", assign5);
-personalLoan.addEventListener("click", assign6);
+other.addEventListener("click", assign6);
 
 
     let defaultMessage = "Please select a loan from the loan list.";
