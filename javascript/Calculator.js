@@ -175,7 +175,7 @@ button.addEventListener("click", () => {
             The amount borrowed is $${borrowAmountText}`
     
             loanDetails3.textContent = `
-            The interest is ${interestRate.value}%
+            The interest is ${interestRate.value}
             which amounts to
             $${Math.round(((result2 - borrowAmountText)*100))/100}
             `
