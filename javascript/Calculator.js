@@ -33,19 +33,21 @@ other.addEventListener("click", assign6);
 
     let defaultMessage = "Please select a loan from the loan list.";
 
-typeOfLoan.textContent = defaultMessage;
-
 if(typeOfLoan.textContent = defaultMessage){
     typeOfLoan.style.color = "red";
-}else if(typeOfLoan.textContent != defaultMessage){
-    typeOfLoan.style.color = "black";
 }
 
 typeOfLoan.classList.toggle("typeOfLoan");
 
 function assign1(){
 if(vehicle){
-   typeOfLoan.textContent = vehicle.textContent;
+    if(typeOfLoan.textContent = vehicle.textContent){
+        typeOfLoan.style.color = "black";
+        typeOfLoan.style.fontSize = "large";
+        typeOfLoan.style.display = "flex";
+        typeOfLoan.style.alignItems = "center";
+        
+    }
    console.log(typeOfLoan.textContent);
    value = "  10";
    months = "  120";
@@ -58,8 +60,13 @@ if(vehicle){
 
 function assign2(){
     if(payDay){
-        typeOfLoan.textContent = payDay.textContent;
-        console.log(typeOfLoan.textContent);
+        if(typeOfLoan.textContent = payDay.textContent){
+            typeOfLoan.style.color = "black";
+            typeOfLoan.style.fontSize = "large";
+            typeOfLoan.style.display = "flex";
+            typeOfLoan.style.alignItems = "center";
+            
+        }        console.log(typeOfLoan.textContent);
         value = "  30";
         months = "  3";
         interestRate.value = value;
@@ -69,8 +76,13 @@ function assign2(){
 }
 function assign3(){
     if(tuition){
-        typeOfLoan.textContent = tuition.textContent;
-        console.log(typeOfLoan.textContent);
+        if(typeOfLoan.textContent = tuition.textContent){
+            typeOfLoan.style.color = "black";
+            typeOfLoan.style.fontSize = "large";
+            typeOfLoan.style.display = "flex";
+            typeOfLoan.style.alignItems = "center";
+            
+        }        console.log(typeOfLoan.textContent);
         value = "  35";
         months = "  60";
         interestRate.value = value;
@@ -92,8 +104,13 @@ function assign4(){
 
 function assign5(){
     if(personalLoan){
-       typeOfLoan.textContent = personalLoan.textContent;
-       console.log(typeOfLoan.textContent);
+        if(typeOfLoan.textContent = personalLoan.textContent){
+            typeOfLoan.style.color = "black";
+            typeOfLoan.style.fontSize = "large";
+            typeOfLoan.style.display = "flex";
+            typeOfLoan.style.alignItems = "center";
+            
+        }       console.log(typeOfLoan.textContent);
        value = "  30";
        interestRate.value = value;
        months = "  36";
@@ -104,7 +121,14 @@ function assign5(){
     }
     function assign6(){
         if(other){
-           typeOfLoan.textContent = other.textContent;
+          // typeOfLoan.textContent = other.textContent;
+        if(typeOfLoan.textContent = other.textContent){
+            typeOfLoan.style.color = "black";
+            typeOfLoan.style.fontSize = "large";
+            typeOfLoan.style.display = "flex";
+            typeOfLoan.style.alignItems = "center";
+            
+        }
            console.log(typeOfLoan.textContent);
            value = "  40";
            months = "  60";
