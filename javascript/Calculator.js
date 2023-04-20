@@ -164,7 +164,7 @@ button.addEventListener("click", () => {
     result(); 
     
     if(monthlyAmountPayable.textContent != "Invalid Values"){
-        if(monthlyAmountPayable.textContent != "$ 0.00")
+        if(monthlyAmountPayable.textContent != "$ 0.00"){
         if(typeOfLoan.textContent != "defaultMessage")
                 loanInfo.textContent = typeOfLoan.textContent;
                 loanDetails1.textContent = `
@@ -185,7 +185,7 @@ button.addEventListener("click", () => {
             `
             The total amount to repay is $${result2}
             `
-     };  
+     } };  
 })
 
 
