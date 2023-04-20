@@ -6,6 +6,7 @@ const vehicle = document.querySelector("#autoLoan");
 const payDay = document.querySelector("#payDayLoan");
 const tuition = document.querySelector("#studentLoan");
 const schoolSupply = document.querySelector("#schoolSupplyLoan");
+const other = document.querySelector("#other");
 
 const borrowAmount = document.querySelector("#borrowAmount");
 const interestRate = document.querySelector("#interestRate");
@@ -27,6 +28,7 @@ payDay.addEventListener("click", assign2);
 tuition.addEventListener("click", assign3);
 schoolSupply.addEventListener("click", assign4);
 personalLoan.addEventListener("click", assign5);
+personalLoan.addEventListener("click", assign6);
 
 
     let defaultMessage = "Please select a loan from the loan list.";
@@ -93,7 +95,18 @@ function assign5(){
        
         }
     }
-
+    function assign6(){
+        if(other){
+           typeOfLoan.textContent = other.textContent;
+           console.log(typeOfLoan.textContent);
+           value = "  40";
+           months = "  60";
+           interestRate.value = value;
+           timePeriod.value = months;
+           typeOfLoan.classList.remove("typeOfLoan");
+        
+            }
+        }
     
 var value;
 var monthlyPaymentTotal;

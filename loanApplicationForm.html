@@ -27,7 +27,7 @@
         <!--Application Form-->
         <section class="">
 
-            <form action="localhost/myProjects/applicationForm.php" method="post" class="bg-white px-1 py-1">
+            <form action="applicationForm.php" method="post" class="bg-white px-1 py-1 mx-2">
             <div class=" w-100">
                 <img src="images/logo.png"  class="mx-auto d-block pb-4" alt="">
             </div>
@@ -78,11 +78,11 @@
                 <label for="TRN" class="w-auto">
                     TRN:
                 </label>
-                <input type="text" name="TRN" value="" class="form-control boxWidth border border-black rounded w-100" required>
+                <input type="text" name="TRN" value="" pattern="" class="form-control boxWidth border border-black rounded w-100" required>
              </div>
 
              <div class="  formFormatting">
-                <label for="ID" class="w-auto">
+                <label for="IDType" class="w-auto">
                     I.D. Type:
                 </label>
                 <select name="IDType" class="border border-black rounded px-1 w-100">
@@ -338,26 +338,13 @@ name="percentage" min="3" max="36" placeholder="" class="form-control border bor
 
    
         <footer>
-            <div class="footerSocialMedia">
-                <ul>
-                    <li>
-                       <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"> Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://www.whatsapp.com/" target="_blank" class="fa fa-whatsapp"> Whatsapp</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"> Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://web.whatsapp.com/" target="_blank" class="fa fa-twitter"> Twitter</a>
-                    </li>
-                </ul>
-            </div>
             <P class="footer">
                &copy; Group 1 Second Semester, 2023
             </P>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous"></script>
     <script src="javascript/carousel.js"></script>
     <script src="javascript/NavMenuAllPages.js"></script>
 </body>
