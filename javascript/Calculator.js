@@ -92,8 +92,13 @@ function assign3(){
 }
 function assign4(){
     if(schoolSupply){
-        typeOfLoan.textContent = schoolSupply.textContent;
-        console.log(typeOfLoan.textContent);
+            if(typeOfLoan.textContent = schoolSupply.textContent){
+                typeOfLoan.style.color = "black";
+                typeOfLoan.style.fontSize = "large";
+                typeOfLoan.style.display = "flex";
+                typeOfLoan.style.alignItems = "center";
+                
+            }           console.log(typeOfLoan.textContent);
         value = "  20";
         months = "  12";
         interestRate.value = value;
