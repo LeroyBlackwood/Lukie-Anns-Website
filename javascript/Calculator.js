@@ -169,14 +169,12 @@ const calculate = () => {
 
 const updateData = (payment) => {
 
-    if(borrowAmountText >=9999 && borrowAmountText < 5000001){
-        if(interestRateText >= 8 && interestRateText < 49){
-                if(period >= 3 && period < 601){
+    if(borrowAmountText >=9999 && borrowAmountText < 5000001 && interestRateText >= 8 && interestRateText < 49 && period >= 3 && period < 601){
 
     result1 = Math.round(payment*100)/100;
     monthlyAmountPayable.textContent = "$ " + result1;
     result2 = Math.round(period * (payment*100))/100;
-    totalAmountPayable.textContent = "$ " + result2;}}}
+    totalAmountPayable.textContent = "$ " + result2;}
     else{
         monthlyAmountPayable.textContent = "Invalid Values";
         totalAmountPayable.textContent = "Invalid Values";

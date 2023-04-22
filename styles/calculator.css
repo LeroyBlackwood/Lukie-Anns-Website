@@ -24,7 +24,7 @@ cursor: pointer;
     justify-content: center;
     justify-items: center;
 }
-.borrowAmount{font-size: medium;}
+.borrowAmount, .interestRate{font-size: medium;}
 
 .selectLoan:hover{
     cursor: pointer;
