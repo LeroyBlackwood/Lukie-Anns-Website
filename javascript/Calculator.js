@@ -2,9 +2,9 @@
 const typeOfLoan = document.querySelector("#loanType");
 
 const personalLoan = document.querySelector("#personalLoan");
-const vehicle = document.querySelector("#autoLoan");
+const autoLoan = document.querySelector("#autoLoan");
 const payDay = document.querySelector("#payDayLoan");
-const tuition = document.querySelector("#studentLoan");
+const studentLoan = document.querySelector("#studentLoan");
 const schoolSupply = document.querySelector("#schoolSupplyLoan");
 const other = document.querySelector("#other");
 
@@ -23,9 +23,9 @@ const loanDetails2 = document.querySelector("#p2");
 const loanDetails3 = document.querySelector("#p3");
 const loanDetails4 = document.querySelector("#p4");
 
-vehicle.addEventListener("click", assign1);
+autoLoan.addEventListener("click", assign1);
 payDay.addEventListener("click", assign2);
-tuition.addEventListener("click", assign3);
+studentLoan.addEventListener("click", assign3);
 schoolSupply.addEventListener("click", assign4);
 personalLoan.addEventListener("click", assign5);
 other.addEventListener("click", assign6);
@@ -39,20 +39,52 @@ if(typeOfLoan.textContent = defaultMessage){
 
 typeOfLoan.classList.toggle("typeOfLoan");
 
+///Using JSON///
+const obj =`[
+    {
+    "name": "Auto Loan",
+    "percentage": 10,
+    "months": 120
+},
+{
+    "name": "Pay Day Loan",
+    "percentage": 30,
+    "months": 3
+},
+{
+    "name": "Student Loan",
+    "percentage": 15,
+    "months": 60
+},
+{
+    "name": "School Supplies Loan",
+    "percentage": 20,
+    "months": 12
+},
+{
+    "name": "Personal Loan",
+    "percentage": 30,
+    "months": 36
+},
+{
+    "name": "Other",
+    "percentage": 35,
+    "months": 36
+}
+
+]`
+
 function assign1(){
-if(vehicle){
-    if(typeOfLoan.textContent = vehicle.textContent){
+if(autoLoan){
+    if(typeOfLoan.textContent = JSON.parse(obj)[0].name){
         typeOfLoan.style.color = "black";
         typeOfLoan.style.fontSize = "large";
         typeOfLoan.style.display = "flex";
         typeOfLoan.style.alignItems = "center";
         
     }
-   console.log(typeOfLoan.textContent);
-   value = "  10";
-   months = "  120";
-   interestRate.value = value;
-   timePeriod.value = months;
+   interestRate.value = JSON.parse(obj)[0].percentage;
+   timePeriod.value = JSON.parse(obj)[0].months;
    typeOfLoan.classList.remove("typeOfLoan");
 
     }
@@ -60,66 +92,58 @@ if(vehicle){
 
 function assign2(){
     if(payDay){
-        if(typeOfLoan.textContent = payDay.textContent){
+        if(typeOfLoan.textContent = JSON.parse(obj)[1].name){
             typeOfLoan.style.color = "black";
             typeOfLoan.style.fontSize = "large";
             typeOfLoan.style.display = "flex";
             typeOfLoan.style.alignItems = "center";
             
-        }        console.log(typeOfLoan.textContent);
-        value = "  30";
-        months = "  3";
-        interestRate.value = value;
-        timePeriod.value = months;
+        }
+        interestRate.value = JSON.parse(obj)[1].percentage;
+        timePeriod.value = JSON.parse(obj)[1].months;
         typeOfLoan.classList.remove("typeOfLoan");
     }
 }
 function assign3(){
-    if(tuition){
-        if(typeOfLoan.textContent = tuition.textContent){
+    if(studentLoan){
+        if(typeOfLoan.textContent = JSON.parse(obj)[2].name){
             typeOfLoan.style.color = "black";
             typeOfLoan.style.fontSize = "large";
             typeOfLoan.style.display = "flex";
             typeOfLoan.style.alignItems = "center";
             
-        }        console.log(typeOfLoan.textContent);
-        value = "  35";
-        months = "  60";
-        interestRate.value = value;
-        timePeriod.value = months;
+        }
+        interestRate.value = JSON.parse(obj)[2].percentage;
+        timePeriod.value = JSON.parse(obj)[2].months;
         typeOfLoan.classList.remove("typeOfLoan");
     }
 }
 function assign4(){
     if(schoolSupply){
-            if(typeOfLoan.textContent = schoolSupply.textContent){
+            if(typeOfLoan.textContent = JSON.parse(obj)[3].name){
                 typeOfLoan.style.color = "black";
                 typeOfLoan.style.fontSize = "large";
                 typeOfLoan.style.display = "flex";
                 typeOfLoan.style.alignItems = "center";
                 
-            }           console.log(typeOfLoan.textContent);
-        value = "  20";
-        months = "  12";
-        interestRate.value = value;
-        timePeriod.value = months;
+            }
+        interestRate.value = JSON.parse(obj)[3].percentage;
+        timePeriod.value = JSON.parse(obj)[3].months;
         typeOfLoan.classList.remove("typeOfLoan");
     }
 }
 
 function assign5(){
     if(personalLoan){
-        if(typeOfLoan.textContent = personalLoan.textContent){
+        if(typeOfLoan.textContent = JSON.parse(obj)[4].name){
             typeOfLoan.style.color = "black";
             typeOfLoan.style.fontSize = "large";
             typeOfLoan.style.display = "flex";
             typeOfLoan.style.alignItems = "center";
             
-        }       console.log(typeOfLoan.textContent);
-       value = "  30";
-       interestRate.value = value;
-       months = "  36";
-       timePeriod.value = months;
+        }
+       interestRate.value = JSON.parse(obj)[4].percentage;
+       timePeriod.value = JSON.parse(obj)[4].months;
        typeOfLoan.classList.remove("typeOfLoan");
        
         }
@@ -127,18 +151,15 @@ function assign5(){
     function assign6(){
         if(other){
           // typeOfLoan.textContent = other.textContent;
-        if(typeOfLoan.textContent = other.textContent){
+        if(typeOfLoan.textContent = JSON.parse(obj)[5].name){
             typeOfLoan.style.color = "black";
             typeOfLoan.style.fontSize = "large";
             typeOfLoan.style.display = "flex";
             typeOfLoan.style.alignItems = "center";
             
         }
-           console.log(typeOfLoan.textContent);
-           value = "  40";
-           months = "  60";
-           interestRate.value = value;
-           timePeriod.value = months;
+           interestRate.value = JSON.parse(obj)[5].percentage;
+           timePeriod.value = JSON.parse(obj)[5].months;
            typeOfLoan.classList.remove("typeOfLoan");
         
             }
@@ -199,7 +220,13 @@ button.addEventListener("click", () => {
     
     if(monthlyAmountPayable.textContent != "Invalid Values"){
         if(monthlyAmountPayable.textContent != "$ 0.00")
-                loanInfo.textContent = typeOfLoan.textContent;
+        if(typeOfLoan.textContent === defaultMessage){
+            typeOfLoan.textContent = 'No loan type was selected!';
+        }else{
+            loanInfo.textContent = typeOfLoan.textContent;
+        }
+
+        loanInfo.textContent = typeOfLoan.textContent;
                 loanDetails1.textContent = `
                 Your Monthly payment will be
                 $${result1} per month for a period of ${period}
