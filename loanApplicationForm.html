@@ -27,7 +27,7 @@
         <!--Application Form-->
         <section class="">
 
-            <form action="applicationForm.php" method="post" class="bg-white px-1 py-1 mx-2">
+            <form action="applicationForm.php" id="form" method="post" class="bg-white px-1 py-1 mx-2">
             <div class=" w-100">
                 <img src="images/logo.png"  class="mx-auto d-block pb-4" alt="">
             </div>
@@ -60,7 +60,7 @@
                     <label for="mName" class="">
                         Middle Name:
                     </label>
-                    <input type="text" name="mName" value="" class="form-control boxWidth border border-black rounded w-100" required>
+                    <input type="text" name="mName" value="" class="form-control boxWidth border border-black rounded w-100">
                 </div>
 
                 <div class="mx-1 formFormatting">
@@ -92,7 +92,7 @@
                   </select>
              </div>
              <div class="mx-3 py-4 formFormatting">
-                <input type="file" name="IdFile" value="" class="boxWidth border border-black rounded w-100" required>
+                <input type="file" name="IdFile" value="" class="boxWidth border border-black rounded w-100" accept="image/gif, image/png, image/jpeg" required >
              </div>
           </div>
 
@@ -227,7 +227,7 @@
             <label for="jobLetter">
                 Job Letter:
             </label>
-            <input type="file" name="jobLetter" value="" class="boxWidth border border-black rounded w-100" required>
+            <input type="file" name="jobLetter" value="" class="boxWidth border border-black rounded w-100" accept="image/gif, image/png, image/jpeg" required>
             <div class="bg-primary-subtle border border-black">
                 <p class="mx-2">you can only upload a maximum of 1 files for job letter.</p>
                         </div>
@@ -236,16 +236,16 @@
         <label for="paySlip">
             Pay Slip:
         </label>
-        <input type="file" name="paySlip" value="" class="boxWidth border border-black rounded w-100" accept="image/gif, image/png, image/jpeg" multiple required>
+        <input type="file" name="paySlip" value="" id="paySlip" class="boxWidth border border-black rounded w-100" accept="image/gif, image/png, image/jpeg" multiple required>
         <div class="bg-primary-subtle border border-black">
-<p class="mx-2">you can only upload a maximum of 3 files for pay slip.</p>
+<p class="paySlipText mx-2">you can only upload a maximum of 3 files for pay slip.</p>
         </div>
   </div>
   <div class="formFormatting">
     <label for="ProofOfAddress">
         Proof of Address:
     </label>
-    <input type="file" name="ProofOfAddress" value="" class="boxWidth border border-black rounded w-100" accept="image/gif, image/png, image/jpeg" multiple required>
+    <input type="file" name="ProofOfAddress" value="" class="boxWidth border border-black rounded w-100" accept="image/gif, image/png, image/jpeg" id="proofOfAddress" multiple required>
     <div class="bg-primary-subtle border border-black">
 <p class="mx-2">you can only upload a maximum of 2 files for Proof of Address.</p>
     </div>
@@ -277,9 +277,10 @@
    name="months" min="3" max="36" placeholder="Minimum: 3 Months, maximum: 36 Month" class="form-control border border-black rounded" required>  <h3 class="ms-1 me-1 text-light ">Mths</h3></span>
 </div>
 </div>
+<hr class="py-2">
+<h3 class=" text-center py-2">Do Not Fill this Section</h3>
 <div class="d-flex w-100">
-
-<div class="w-100 mx-1 py-3">
+<div class="w-100 mx-1 py-1">
     <label for="repay">
       Repay:
 </label>
@@ -288,16 +289,16 @@
         $
     </h3>
 <input type="text"name="repay" min="3" max="36" placeholder=""
-class="form-control border border-black rounded" required>
+class="form-control border border-black rounded" >
 </span>
 </div>
 
-<div class="w-100 mx-1 py-3">
+<div class="w-100 mx-1 py-1">
     <label for="percentage">
       Percentage:
 </label><span class="w-100 d-flex border border-black rounded bg-dark  ">
 <input type="number"
-name="percentage" min="3" max="36" placeholder="" class="form-control border border-black rounded" required>
+name="percentage" min="3" max="36" placeholder="" class="form-control border border-black rounded">
 <h3 class="ms-1 me-1 text-light ">
     %
 </h3>
@@ -313,7 +314,7 @@ name="percentage" min="3" max="36" placeholder="" class="form-control border bor
     <!--Submit-->
     <hr>
 <div>
-<button type="submit" class="btn btn-primary">
+<button type="submit" class="submit btn btn-primary">
     Submit
 </button>
 </div>
@@ -345,7 +346,7 @@ name="percentage" min="3" max="36" placeholder="" class="form-control border bor
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
         crossorigin="anonymous"></script>
-    <script src="javascript/carousel.js"></script>
+    <script src="javascript/loanForm.js"></script>
     <script src="javascript/NavMenuAllPages.js"></script>
 </body>
 </html>
